@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2a8d5c;
+}
+.header {
+  background-color: #fff;
+  margin: 20px 70px;
+  text-align: center;
+  h1 {
+    font-size: 68px;
+    font-weight: 300;
+    text-align: center;
+  }
+  p {
+    padding: 10px;
+  }
+}
+.main {
+  margin: 40px 90px;
+  text-align: center;
+  .start-game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      width: 48%;
+      padding: 8px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+    button {
+      width: 48%;
+      padding: 8px;
+      border-radius: 10px;
+      border: none;
+      background-color: #dc3545;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      &:hover {
+        background-color: #bb2d3b;
+      }
+    }
+  }
+  img {
+    margin-top: 50px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.score {
+  margin: 40px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div:first-child,
+  div:last-child {
+    width: 470px;
+    background-color: #fff;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 28px;
+    }
+
+    .youScore {
+      color: #dc3545;
+    }
+    .compScore {
+      color: #11caf0;
+    }
+  }
+  .vs {
+    font-size: 80px;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+.guessGame {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 70px;
+  .guessYou,
+  .guessComp {
+    width: 500px;
+    height: 300px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    p {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  .guessYou {
+    background-color: #dc3545;
+  }
+  .guessComp {
+    background-color: #11caf0;
+  }
+}
